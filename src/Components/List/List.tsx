@@ -1,6 +1,7 @@
 
 type LParams = {
     data: list[]
+    listStyle: string
 }
 
 type list = {
@@ -9,12 +10,12 @@ type list = {
 }
 
 export default function List(params: LParams) {
-    const { data } = params
+    const { data, listStyle } = params
     const items = data.map((item, index) => {
         const { title, description } = item
         return (
             <li key={index + 'list'}>
-                <h3 className="fs-600 fw-bold">{title}</h3>
+                <h3 className={listStyle}>{title}</h3>
                 <p>{description}</p>
             </li>
         )

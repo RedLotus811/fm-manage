@@ -20,7 +20,7 @@ export default function Article() {
                         </p>
                     </div>
                     <div>
-                        <List data={data} />
+                        <List data={data} listStyle='fs-600 fw-bold' />
                     </div>
                 </div>
             </div>
