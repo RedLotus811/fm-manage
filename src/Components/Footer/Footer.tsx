@@ -4,6 +4,7 @@ import { ReactComponent as Pt_Logo } from '../../assets/icon-pinterest.svg'
 import { ReactComponent as Tt_Logo } from '../../assets/icon-twitter.svg'
 import { ReactComponent as Yt_Logo } from '../../assets/icon-youtube.svg'
 import { ReactComponent as Logo } from '../../assets/logo.svg'
+import '../../utils.css'
 
 export default function Footer() {
 
@@ -23,15 +24,15 @@ export default function Footer() {
             )
         })
     const navItems = ['Home', 'Pricing', 'Products', 'About Us', 'Careers', 'Community', 'Privacy Policy']
-    const footerNav = navItems.map((item, index) => {
-        return (
-            <li key={`list-item-${index}`}>
-                <a href="#">{item}</a>
-            </li>
-        )
-    })
+        .map((item, index) => {
+            return (
+                <li key={`list-item-${index}`}>
+                    <a href="#">{item}</a>
+                </li>
+            )
+        })
     return (
-        <footer className="footer | bg-neutral-900 text-neutral-100">
+        <footer className="footer | bg-neutral-900 text-neutral-100 padding-block-700">
             <div className="container">
                 <div className="even-columns">
                     <div>
@@ -43,13 +44,13 @@ export default function Footer() {
                     <div>
                         <nav className='footer-nav'>
                             <ul role="list" aria-label="Footer">
-                                {footerNav}
+                                {navItems}
                             </ul>
                         </nav>
                     </div>
                     <div>
                         <form action="">
-                            <input type="email" />
+                            <input type="email" placeholder='upadates in your inbox' />
                             <button>Go</button>
                         </form>
                     </div>

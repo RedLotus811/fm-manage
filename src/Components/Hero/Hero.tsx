@@ -1,10 +1,9 @@
-import React from 'react'
 import '../../utils.css'
 import { ReactComponent as Illustration } from '../../assets/illustration-intro.svg'
 
 export default function Hero() {
     return (
-        <section className='hero'>
+        <section className='hero | padding-block-900 '>
             <div className="container">
                 <div className="even-columns">
                     <div>

@@ -4,7 +4,7 @@ import { data } from './data.json'
 
 export default function Article() {
     return (
-        <section className="article">
+        <section className="article padding-block-900">
             <div className="container">
                 <div className="even-columns">
                     <div>
